@@ -2,43 +2,238 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – Boxing Manager King</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boxing Manager King — Privacy Policy / Polityka prywatności / Política de privacidad</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-  h1 { color: #1a1a1a; }
-  h2 { color: #333; margin-top: 30px; }
-  p { margin: 10px 0; }
+  :root{
+    --bg:#0d0b08; --panel:#17140f; --panel2:#1e1a14; --line:#332c22;
+    --text:#f1ece2; --muted:#a99f8c; --gold:#d4a437; --link:#e8c46b;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:'Segoe UI',Roboto,Arial,sans-serif; line-height:1.6;
+  }
+  header{
+    background:var(--panel2); border-bottom:2px solid var(--gold);
+    padding:20px 16px; text-align:center;
+  }
+  header h1{margin:0 0 6px; font-size:22px}
+  header p{margin:0; color:var(--muted); font-size:13px}
+  .langbar{
+    display:flex; justify-content:center; gap:8px; margin-top:14px; flex-wrap:wrap;
+  }
+  .langbar a{
+    color:var(--bg); background:var(--gold); text-decoration:none;
+    padding:7px 16px; border-radius:20px; font-size:13px; font-weight:600;
+  }
+  .langbar a:hover{opacity:.85}
+  main{max-width:760px; margin:0 auto; padding:24px 18px 60px}
+  section{display:none; padding-top:6px}
+  section:target, section.default-visible{display:block}
+  h2{color:var(--gold); font-size:19px; border-bottom:1px solid var(--line); padding-bottom:6px; margin-top:34px}
+  h2:first-of-type{margin-top:8px}
+  h3{font-size:15px; color:var(--text); margin-bottom:4px}
+  p, li{color:var(--text); font-size:14.5px}
+  ul{padding-left:20px}
+  a{color:var(--link)}
+  .muted{color:var(--muted); font-size:13px}
+  .box{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    padding:14px 16px; margin:14px 0;
+  }
+  code{background:var(--panel2); padding:1px 5px; border-radius:4px; font-size:13px}
+  table{width:100%; border-collapse:collapse; margin:10px 0; font-size:13.5px}
+  th,td{border:1px solid var(--line); padding:7px 9px; text-align:left}
+  th{background:var(--panel2); color:var(--gold)}
+  footer{text-align:center; color:var(--muted); font-size:12px; padding:20px; border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy – Boxing Manager King</h1>
-<p><strong>Last updated:</strong> June 22, 2026</p>
+<header>
+  <h1>Boxing Manager King — Privacy Policy</h1>
+  <p>Kryczka Studios (KSU) · com.psikuta.boxingmanagerk · Effective: 28 September 2026</p>
+  <div class="langbar">
+    <a href="#en">English</a>
+    <a href="#pl">Polski</a>
+    <a href="#es">Español</a>
+  </div>
+</header>
 
-<p>This Privacy Policy describes how <strong>Kryczka Studios</strong> ("we", "us", or "our") handles information in connection with the mobile game <strong>Boxing Manager King</strong> (the "App").</p>
+<main>
 
-<h2>1. Information We Collect</h2>
-<p>Boxing Manager King does <strong>not collect, store, or transmit any personal data</strong> to our servers. The App operates entirely on your device.</p>
-<p>All game progress and save data is stored locally on your device using your device's local storage. This data never leaves your device and is not accessible to us.</p>
+<section id="en" class="default-visible">
 
-<h2>2. Third-Party Services</h2>
-<p>The App currently does <strong>not</strong> use any third-party analytics, advertising SDKs, or tracking services.</p>
-<p>Future versions of the App may include optional advertising (e.g. Google AdMob) to support free access. This Privacy Policy will be updated before any such features are introduced.</p>
+<h2>1. Who we are</h2>
+<p>Boxing Manager King is developed and published by <strong>Kryczka Studios</strong> (Kryczka Studios Universe / KSU), an independent solo developer. If you have any questions about this policy or your data, contact:</p>
+<p><strong>Email:</strong> <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
 
-<h2>3. Children's Privacy</h2>
-<p>Boxing Manager King is not directed at children under the age of 13. We do not knowingly collect any personal information from children. Since the App collects no personal data at all, there is no risk of inadvertent collection from children.</p>
+<h2>2. Data stored on your device</h2>
+<p>Your entire career — manager name, team name, nationality, roster, stats, finances and progress — is saved locally on your device using your browser/app's local storage (<code>localStorage</code>). This data never leaves your device unless described in the sections below. We cannot see, back up or recover this data ourselves; if you uninstall the app or clear its storage, your save is gone.</p>
 
-<h2>4. Data Security</h2>
-<p>Since no personal data is collected or transmitted, there is no data at risk of breach or unauthorized access on our end. Your game data stored locally on your device is protected by your device's own security mechanisms.</p>
+<h2>3. Advertising (Google AdMob)</h2>
+<p>Boxing Manager King shows optional rewarded video ads (to earn in-game bonuses) and occasional interstitial ads, served through <strong>Google AdMob</strong>.</p>
+<p>To serve and measure ads, Google (as an independent data controller) may collect and process:</p>
+<ul>
+  <li>your <strong>advertising ID</strong> (Android's <code>AD_ID</code>);</li>
+  <li>your <strong>IP address</strong> (used to derive approximate location, e.g. country);</li>
+  <li>device information (model, OS version, language, screen size);</li>
+  <li>ad interaction data (impressions, clicks, time watched for rewarded ads).</li>
+</ul>
+<p>You can review how Google uses this information here: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Policy</a> and <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
+<div class="box">
+  <h3>Your consent choice (UK / EEA)</h3>
+  <p>If you are located in the UK or the European Economic Area, the app shows a Google-certified consent form (Google's User Messaging Platform) the first time it can, asking whether you agree to personalized ads and related data processing. If you don't consent, or the form hasn't shown yet, you'll only be shown non-personalized ads (or no ads at all, if none are available).</p>
+  <p>You can review or change your choice at any time in-game: go to the <strong>Bonuses</strong> tab and tap <strong>"🔒 Ad privacy settings"</strong> (this button appears there whenever Google requires it to be available to you).</p>
+</div>
 
-<h2>5. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+<h2>4. Global player leaderboard (Supabase)</h2>
+<p>The app has an optional public leaderboard ("🏆 Player leaderboard"). Nothing is sent anywhere <strong>unless you open that screen yourself</strong> — opening it automatically submits (or updates) your current entry.</p>
+<p>What is sent, to our database hosted by <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> (acting as our data processor):</p>
+<table>
+  <tr><th>Field</th><th>What it is</th></tr>
+  <tr><td>Device ID</td><td>A random identifier generated by the app itself and stored on your device (e.g. <code>p_a1b2c3...</code>) — it is <em>not</em> your phone's hardware ID and cannot identify you personally on its own.</td></tr>
+  <tr><td>Manager/team name</td><td>The name you typed when creating your career.</td></tr>
+  <tr><td>Titles, wins, in-game day</td><td>Your career statistics.</td></tr>
+</table>
+<p><strong>This leaderboard is public</strong> — anyone playing the game can see these entries. Please avoid using your real full name or any other personal information as your manager/team name.</p>
+<p>To request removal of a leaderboard entry, email us at <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a> with the manager/team name shown and roughly when you played — we cannot look entries up any other way, since we don't collect accounts or emails in the game itself.</p>
 
-<h2>6. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at:</p>
-<p><strong>Kryczka Studios</strong><br>
-Email: <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+<h2>5. Children</h2>
+<p>Boxing Manager King is not directed at children under 13 and we do not knowingly collect personal data from children under 13 beyond what is described above (which applies equally to all players, adult or not). If you are a parent or guardian and believe your child has provided us data through the leaderboard, contact us and we will remove it.</p>
+
+<h2>6. Your rights</h2>
+<p>Depending on where you live (e.g. under the UK GDPR or EU GDPR), you may have rights to access, correct, or delete data we hold about you. Since the game itself stores everything locally and we only receive what's described in section 4, in practice this means: you can ask us to delete a leaderboard entry at any time, and you can withdraw or change your ad-consent choice at any time via the in-game privacy button described in section 3. For anything Google processes directly, see Google's own privacy controls at <a href="https://myadcenter.google.com" target="_blank" rel="noopener">myadcenter.google.com</a>.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>We may update this policy from time to time, for example when adding new features that touch your data. We'll update the "Effective" date at the top of this page when we do.</p>
+
+<h2>8. Contact</h2>
+<p><a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+
+</section>
+
+<section id="pl">
+
+<h2>1. Kto przetwarza Twoje dane</h2>
+<p>Boxing Manager King tworzy i wydaje <strong>Kryczka Studios</strong> (Kryczka Studios Universe / KSU) — niezależny, jednoosobowy deweloper. W sprawie tej polityki lub swoich danych możesz napisać na:</p>
+<p><strong>E-mail:</strong> <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+
+<h2>2. Dane przechowywane na Twoim urządzeniu</h2>
+<p>Cały przebieg Twojej kariery — imię menedżera, nazwa zespołu, narodowość, skład zawodników, statystyki, finanse i postęp — zapisywany jest lokalnie na Twoim urządzeniu, w pamięci lokalnej przeglądarki/aplikacji (<code>localStorage</code>). Te dane nie opuszczają Twojego urządzenia, chyba że dotyczy ich któraś z sekcji poniżej. Nie mamy do nich dostępu, nie robimy ich kopii zapasowej ani nie możemy ich odzyskać — jeśli odinstalujesz aplikację lub wyczyścisz jej dane, zapis przepada bezpowrotnie.</p>
+
+<h2>3. Reklamy (Google AdMob)</h2>
+<p>Boxing Manager King wyświetla opcjonalne reklamy wideo z nagrodą (za bonusy w grze) oraz okazjonalne reklamy pełnoekranowe, dostarczane przez <strong>Google AdMob</strong>.</p>
+<p>Aby wyświetlać i mierzyć skuteczność reklam, Google (jako niezależny administrator danych) może zbierać i przetwarzać:</p>
+<ul>
+  <li>Twój <strong>identyfikator reklamowy</strong> (androidowy <code>AD_ID</code>);</li>
+  <li>Twój <strong>adres IP</strong> (używany do określenia przybliżonej lokalizacji, np. kraju);</li>
+  <li>informacje o urządzeniu (model, wersja systemu, język, rozdzielczość ekranu);</li>
+  <li>dane o interakcji z reklamami (wyświetlenia, kliknięcia, czas obejrzenia reklamy z nagrodą).</li>
+</ul>
+<p>Możesz sprawdzić, jak Google wykorzystuje te informacje tutaj: <a href="https://policies.google.com/technologies/ads?hl=pl" target="_blank" rel="noopener">Zasady Google dotyczące reklam</a> oraz <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">Jak Google wykorzystuje dane z witryn i aplikacji korzystających z jego usług</a>.</p>
+<div class="box">
+  <h3>Twoja zgoda (UK / EOG)</h3>
+  <p>Jeśli znajdujesz się w Wielkiej Brytanii lub Europejskim Obszarze Gospodarczym, aplikacja przy pierwszej możliwej okazji pokazuje certyfikowany przez Google formularz zgody (Google User Messaging Platform), pytając, czy zgadzasz się na reklamy spersonalizowane i związane z tym przetwarzanie danych. Jeśli nie wyrazisz zgody albo formularz jeszcze się nie pokazał, zobaczysz wyłącznie reklamy niespersonalizowane (albo żadne, jeśli akurat żadne nie są dostępne).</p>
+  <p>Swój wybór możesz w każdej chwili sprawdzić lub zmienić w samej grze: wejdź w zakładkę <strong>Dodatki</strong> i dotknij <strong>„🔒 Ustawienia prywatności reklam"</strong> (przycisk pojawia się tam zawsze, gdy Google wymaga jego dostępności).</p>
+</div>
+
+<h2>4. Globalny ranking graczy (Supabase)</h2>
+<p>Gra ma opcjonalny, publiczny ranking graczy („🏆 Ranking graczy"). Nic nie zostaje nigdzie wysłane, <strong>dopóki sam/sama nie otworzysz</strong> tego ekranu — jego otwarcie automatycznie wysyła (lub aktualizuje) Twój wpis.</p>
+<p>Co dokładnie trafia do naszej bazy danych, hostowanej przez <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> (działającego jako nasz podmiot przetwarzający dane):</p>
+<table>
+  <tr><th>Pole</th><th>Co to jest</th></tr>
+  <tr><td>Identyfikator urządzenia</td><td>Losowy identyfikator wygenerowany przez samą aplikację i zapisany na Twoim urządzeniu (np. <code>p_a1b2c3...</code>) — to <em>nie</em> jest sprzętowy identyfikator Twojego telefonu i sam w sobie nie pozwala Cię zidentyfikować.</td></tr>
+  <tr><td>Nazwa menedżera/zespołu</td><td>Nazwa, którą wpisałeś/wpisałaś przy tworzeniu kariery.</td></tr>
+  <tr><td>Liczba tytułów, zwycięstw, dzień w grze</td><td>Statystyki Twojej kariery.</td></tr>
+</table>
+<p><strong>Ten ranking jest publiczny</strong> — każdy grający widzi te wpisy. Unikaj wpisywania swojego prawdziwego imienia i nazwiska czy innych danych osobowych jako nazwy menedżera/zespołu.</p>
+<p>Aby poprosić o usunięcie wpisu z rankingu, napisz na <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a>, podając widoczną nazwę menedżera/zespołu i orientacyjnie kiedy grałeś/grałaś — nie mamy innej możliwości odnalezienia wpisu, bo gra nie zbiera kont ani adresów e-mail.</p>
+
+<h2>5. Dzieci</h2>
+<p>Boxing Manager King nie jest kierowany do dzieci poniżej 13. roku życia i świadomie nie zbieramy od nich danych osobowych poza tym, co opisano wyżej (a co dotyczy wszystkich graczy jednakowo, niezależnie od wieku). Jeśli jesteś rodzicem lub opiekunem i uważasz, że Twoje dziecko przekazało nam dane przez ranking, skontaktuj się z nami — usuniemy je.</p>
+
+<h2>6. Twoje prawa</h2>
+<p>W zależności od miejsca zamieszkania (np. na mocy UK GDPR lub unijnego RODO) możesz mieć prawo dostępu do swoich danych, ich poprawiania lub usunięcia. Ponieważ sama gra przechowuje wszystko lokalnie, a do nas trafia wyłącznie to, co opisano w punkcie 4, w praktyce oznacza to: w każdej chwili możesz poprosić o usunięcie wpisu z rankingu oraz wycofać lub zmienić swoją zgodę na reklamy przez opisany w punkcie 3 przycisk w grze. W sprawie danych przetwarzanych bezpośrednio przez Google, zobacz jego własne narzędzia prywatności na <a href="https://myadcenter.google.com" target="_blank" rel="noopener">myadcenter.google.com</a>.</p>
+
+<h2>7. Zmiany tej polityki</h2>
+<p>Możemy od czasu do czasu aktualizować tę politykę, np. przy dodawaniu nowych funkcji dotyczących Twoich danych. Przy każdej zmianie zaktualizujemy datę „Obowiązuje od" na górze strony.</p>
+
+<h2>8. Kontakt</h2>
+<p><a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+
+</section>
+
+<section id="es">
+
+<h2>1. Quiénes somos</h2>
+<p>Boxing Manager King está desarrollado y publicado por <strong>Kryczka Studios</strong> (Kryczka Studios Universe / KSU), un desarrollador independiente. Si tienes preguntas sobre esta política o tus datos, contáctanos en:</p>
+<p><strong>Correo electrónico:</strong> <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+
+<h2>2. Datos guardados en tu dispositivo</h2>
+<p>Toda tu carrera —nombre del mánager, nombre del equipo, nacionalidad, plantilla, estadísticas, finanzas y progreso— se guarda localmente en tu dispositivo, usando el almacenamiento local del navegador/aplicación (<code>localStorage</code>). Estos datos no salen de tu dispositivo salvo lo descrito en las secciones siguientes. No podemos verlos, respaldarlos ni recuperarlos nosotros mismos; si desinstalas la aplicación o borras sus datos, tu partida se pierde.</p>
+
+<h2>3. Publicidad (Google AdMob)</h2>
+<p>Boxing Manager King muestra anuncios de vídeo con recompensa opcionales (para obtener bonificaciones en el juego) y anuncios intersticiales ocasionales, servidos a través de <strong>Google AdMob</strong>.</p>
+<p>Para mostrar y medir los anuncios, Google (como responsable independiente del tratamiento) puede recopilar y procesar:</p>
+<ul>
+  <li>tu <strong>identificador de publicidad</strong> (<code>AD_ID</code> de Android);</li>
+  <li>tu <strong>dirección IP</strong> (usada para deducir tu ubicación aproximada, p. ej. el país);</li>
+  <li>información del dispositivo (modelo, versión del sistema, idioma, tamaño de pantalla);</li>
+  <li>datos de interacción con anuncios (impresiones, clics, tiempo visto en anuncios con recompensa).</li>
+</ul>
+<p>Puedes consultar cómo usa Google esta información aquí: <a href="https://policies.google.com/technologies/ads?hl=es" target="_blank" rel="noopener">Política de anuncios de Google</a> y <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">Cómo usa Google la información de sitios o aplicaciones que usan sus servicios</a>.</p>
+<div class="box">
+  <h3>Tu elección de consentimiento (Reino Unido / EEE)</h3>
+  <p>Si te encuentras en el Reino Unido o el Espacio Económico Europeo, la aplicación muestra, en cuanto puede, un formulario de consentimiento certificado por Google (User Messaging Platform), preguntando si aceptas anuncios personalizados y el tratamiento de datos asociado. Si no das tu consentimiento, o el formulario aún no se ha mostrado, solo verás anuncios no personalizados (o ninguno, si no hay disponibles).</p>
+  <p>Puedes revisar o cambiar tu elección en cualquier momento desde el juego: ve a la pestaña <strong>Bonus</strong> y toca <strong>«🔒 Ajustes de privacidad de anuncios»</strong> (este botón aparece siempre que Google exige que esté disponible para ti).</p>
+</div>
+
+<h2>4. Clasificación global de jugadores (Supabase)</h2>
+<p>El juego tiene una clasificación pública opcional («🏆 Clasificación»). No se envía nada a ningún sitio <strong>a menos que abras esa pantalla tú mismo/a</strong> — al abrirla se envía (o actualiza) automáticamente tu entrada.</p>
+<p>Qué se envía exactamente a nuestra base de datos, alojada por <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> (que actúa como nuestro encargado del tratamiento):</p>
+<table>
+  <tr><th>Campo</th><th>Qué es</th></tr>
+  <tr><td>ID de dispositivo</td><td>Un identificador aleatorio generado por la propia aplicación y guardado en tu dispositivo (p. ej. <code>p_a1b2c3...</code>) — <em>no</em> es el identificador de hardware de tu teléfono y por sí solo no permite identificarte.</td></tr>
+  <tr><td>Nombre de mánager/equipo</td><td>El nombre que escribiste al crear tu carrera.</td></tr>
+  <tr><td>Títulos, victorias, día de juego</td><td>Las estadísticas de tu carrera.</td></tr>
+</table>
+<p><strong>Esta clasificación es pública</strong> — cualquier persona que juegue puede ver estas entradas. Evita usar tu nombre real completo u otros datos personales como nombre de mánager/equipo.</p>
+<p>Para solicitar la eliminación de una entrada, escríbenos a <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a> indicando el nombre de mánager/equipo mostrado y aproximadamente cuándo jugaste — no tenemos otra forma de localizar la entrada, ya que el juego no recopila cuentas ni correos electrónicos.</p>
+
+<h2>5. Menores</h2>
+<p>Boxing Manager King no está dirigido a menores de 13 años y no recopilamos conscientemente datos personales de menores de 13 años más allá de lo descrito arriba (que se aplica igual a todos los jugadores). Si eres madre, padre o tutor/a y crees que tu hijo/a nos ha proporcionado datos a través de la clasificación, contáctanos y los eliminaremos.</p>
+
+<h2>6. Tus derechos</h2>
+<p>Dependiendo de dónde vivas (por ejemplo, bajo el RGPD del Reino Unido o de la UE), puedes tener derecho a acceder, corregir o eliminar los datos que tenemos sobre ti. Como el juego guarda todo localmente y nosotros solo recibimos lo descrito en la sección 4, en la práctica esto significa: puedes pedirnos en cualquier momento que eliminemos una entrada de la clasificación, y puedes retirar o cambiar tu consentimiento de anuncios en cualquier momento mediante el botón descrito en la sección 3. Para los datos que Google procesa directamente, consulta sus propios controles de privacidad en <a href="https://myadcenter.google.com" target="_blank" rel="noopener">myadcenter.google.com</a>.</p>
+
+<h2>7. Cambios en esta política</h2>
+<p>Podemos actualizar esta política de vez en cuando, por ejemplo al añadir nuevas funciones que afecten a tus datos. Actualizaremos la fecha de «Vigencia» en la parte superior de esta página cuando lo hagamos.</p>
+
+<h2>8. Contacto</h2>
+<p><a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+
+</section>
+
+</main>
+
+<footer>Boxing Manager King · Kryczka Studios (KSU) · com.psikuta.boxingmanagerk</footer>
+
+<script>
+  // Pokaż sekcję pasującą do #hash przy starcie i przy zmianie hasha (poza :target,
+  // dla przeglądarek/podglądów bez pełnej obsługi CSS :target).
+  function showFromHash(){
+    var h=(location.hash||"#en").slice(1);
+    var ids=["en","pl","es"];
+    if(ids.indexOf(h)===-1)h="en";
+    ids.forEach(function(id){
+      document.getElementById(id).style.display=(id===h)?"block":"none";
+    });
+  }
+  window.addEventListener("hashchange",showFromHash);
+  showFromHash();
+</script>
 
 </body>
 </html>
