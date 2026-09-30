@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Match QC — Privacy Policy / Polityka prywatności / Política de privacidad</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --border:#262b36;
+    --text:#e8eaf0; --dim:#9aa2b1; --accent:#5b9dff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 16px 64px;
+    background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:820px;margin:0 auto}
+  header{padding:32px 0 8px;border-bottom:1px solid var(--border)}
+  h1{font-size:22px;margin:0 0 4px}
+  .sub{color:var(--dim);font-size:14px;margin:0}
+  nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 8px}
+  nav a{
+    text-decoration:none;color:var(--text);background:var(--panel);
+    border:1px solid var(--border);border-radius:999px;
+    padding:7px 14px;font-size:14px;
+  }
+  nav a:hover{border-color:var(--accent);color:var(--accent)}
+  section{padding:28px 0;border-bottom:1px solid var(--border)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:19px;margin:0 0 4px}
+  h3{font-size:15px;margin:26px 0 6px;color:var(--accent)}
+  p,li{color:var(--text)}
+  .meta{color:var(--dim);font-size:13px;margin:0 0 18px}
+  ul{padding-left:22px;margin:8px 0}
+  li{margin:4px 0}
+  a{color:var(--accent)}
+  code{background:var(--panel);border:1px solid var(--border);border-radius:5px;padding:1px 5px;font-size:13px}
+  .box{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:14px 0}
+  footer{padding:28px 0;color:var(--dim);font-size:13px}
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#ffffff; --panel:#f4f6fa; --border:#dde2ea;
+      --text:#141821; --dim:#5c6575; --accent:#1857c4;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Color Match QC <span style="color:var(--dim);font-weight:400">(Porównywarka kolorów)</span></h1>
+  <p class="sub">Android · <code>com.psikuta.colormatcher</code> · Kryczka Studios Universe (KSU)</p>
+</header>
+
+<nav>
+  <a href="#pl">🇵🇱 Polski</a>
+  <a href="#en">🇬🇧 English</a>
+  <a href="#es">🇪🇸 Español</a>
+</nav>
+
+<!-- ============================== POLSKI ============================== -->
+<section id="pl">
+  <h2>Polityka prywatności</h2>
+  <p class="meta">Obowiązuje od: 30 września 2026 · Ostatnia aktualizacja: 30 września 2026</p>
+
+  <p>Aplikacja <strong>Color Match QC</strong> („Porównywarka kolorów”, dalej „Aplikacja”) jest tworzona
+  i wydawana przez <strong>Kryczka Studios Universe (KSU)</strong> — działalność jednoosobową prowadzoną
+  przez Piotra Kryczkę („my”, „nas”). Ten dokument opisuje, jakie dane Aplikacja przetwarza,
+  w jakim celu i komu są przekazywane.</p>
+
+  <div class="box">
+    <strong>Najkrótsza wersja:</strong> Aplikacja działa offline. Nie mamy serwera, nie mamy kont
+    użytkowników i nie zbieramy o Tobie żadnych danych. Twoje zdjęcia i wyniki pomiarów nie opuszczają
+    telefonu. Jedynym podmiotem zewnętrznym otrzymującym dane jest Google AdMob, który wyświetla
+    baner reklamowy w Aplikacji.
+  </div>
+
+  <h3>1. Co Aplikacja robi</h3>
+  <p>Aplikacja porównuje barwy: wyliczyła różnicę barwy (ΔE, CIEDE2000 oraz CIE76) między wzorcem
+  a próbką, na podstawie kolorów odczytanych ze zdjęcia lub wprowadzonych ręcznie. Wszystkie
+  obliczenia wykonują się lokalnie na urządzeniu.</p>
+
+  <h3>2. Dane zapisywane na Twoim urządzeniu</h3>
+  <p>Aplikacja zapisuje w pamięci lokalnej telefonu (mechanizm <code>Capacitor Preferences</code>,
+  czyli prywatna pamięć aplikacji) następujące informacje:</p>
+  <ul>
+    <li><strong>Biblioteka kolorów</strong> — barwy zapisane przez Ciebie wraz z nadanymi nazwami,</li>
+    <li><strong>Historia pomiarów</strong> — wyniki wcześniejszych porównań,</li>
+    <li><strong>Wybrany język interfejsu</strong> (polski / angielski / hiszpański).</li>
+  </ul>
+  <p>Te dane <strong>nie są nigdzie przesyłane</strong> — nie trafiają do nas ani do żadnego innego
+  podmiotu. Są widoczne wyłącznie na Twoim urządzeniu i zostaną trwale usunięte, gdy wyczyścisz dane
+  aplikacji lub ją odinstalujesz. Nie mamy do nich dostępu i nie możemy ich odzyskać.</p>
+
+  <h3>3. Zdjęcia i aparat</h3>
+  <p>Aby odczytać barwę, możesz wskazać zdjęcie z galerii albo zrobić je aparatem — wybór odbywa się
+  przez standardowe okno wyboru plików systemu Android. Wskazane zdjęcie jest wczytywane do pamięci
+  Aplikacji, przeliczane na wartości barwy i <strong>nigdzie nie jest zapisywane</strong> — istnieje
+  tylko w pamięci ulotnej, dopóki Aplikacja jest uruchomiona. Aplikacja:</p>
+  <ul>
+    <li>nie wysyła zdjęć na żaden serwer,</li>
+    <li>nie zapisuje zdjęć we własnej pamięci ani w galerii,</li>
+    <li>nie ma dostępu do Twojej galerii jako całości — widzi tylko ten jeden plik, który sam wskażesz,</li>
+    <li>nie prowadzi ciągłego podglądu z kamery ani nagrywania.</li>
+  </ul>
+
+  <h3>4. Reklamy — Google AdMob</h3>
+  <p>W Aplikacji wyświetlany jest baner reklamowy obsługiwany przez <strong>Google AdMob</strong>.
+  Aby dostarczać i rozliczać reklamy, zestaw Google Mobile Ads SDK zbiera i przekazuje Google:</p>
+  <ul>
+    <li><strong>identyfikator reklamowy Androida (Advertising ID) oraz App Set ID</strong>,</li>
+    <li><strong>adres IP</strong>, na podstawie którego można oszacować przybliżoną lokalizację
+        (kraj/region — nie jest to dokładna lokalizacja GPS; Aplikacja nie prosi o uprawnienie do lokalizacji),</li>
+    <li><strong>informacje o urządzeniu</strong> (model, wersja systemu, język, parametry ekranu),</li>
+    <li><strong>interakcje z reklamą i aplikacją</strong> (uruchomienia, wyświetlenia i kliknięcia reklam),</li>
+    <li><strong>dane diagnostyczne</strong> dotyczące działania reklam i stabilności Aplikacji.</li>
+  </ul>
+  <p>Dane te są przesyłane szyfrowanym połączeniem (TLS) i służą do wyświetlania reklam,
+  pomiarów oraz wykrywania nadużyć i oszustw reklamowych. Administratorem tych danych jest Google.
+  Szczegóły:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Polityka prywatności Google</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Jak Google wykorzystuje dane z witryn i aplikacji korzystających z jego usług</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Informacje AdMob o ochronie prywatności</a></li>
+  </ul>
+
+  <h3>5. Zgoda na reklamy (RODO / EOG i Wielka Brytania)</h3>
+  <p>Jeśli korzystasz z Aplikacji w Europejskim Obszarze Gospodarczym, Szwajcarii lub Wielkiej Brytanii,
+  przy pierwszym uruchomieniu wyświetli się okno zgody obsługiwane przez
+  <strong>Google User Messaging Platform (UMP)</strong>. Reklamy personalizowane są wyświetlane wyłącznie,
+  jeśli wyrazisz na nie zgodę; w przeciwnym razie Aplikacja pokazuje reklamy niespersonalizowane.</p>
+  <p>Swoją decyzję możesz w każdej chwili zmienić:</p>
+  <ul>
+    <li>wyłączając personalizację reklam w systemie: <em>Ustawienia Androida → Google → Reklamy</em>
+        (tam możesz też zresetować lub usunąć identyfikator reklamowy),</li>
+    <li>czyszcząc dane Aplikacji (<em>Ustawienia → Aplikacje → Color Match QC → Pamięć → Wyczyść dane</em>) —
+        po ponownym uruchomieniu okno zgody pojawi się jeszcze raz.</li>
+  </ul>
+
+  <h3>6. Czego Aplikacja NIE robi</h3>
+  <ul>
+    <li>nie wymaga konta, rejestracji ani logowania,</li>
+    <li>nie zbiera imienia, nazwiska, adresu e-mail, numeru telefonu ani danych firmy,</li>
+    <li>nie korzysta z analityki (Firebase Analytics, Google Analytics itp.),</li>
+    <li>nie ma serwera, bazy danych, rankingu ani synchronizacji w chmurze,</li>
+    <li>nie sprzedaje ani nie wynajmuje żadnych danych,</li>
+    <li>nie prosi o dostęp do kontaktów, mikrofonu, SMS-ów ani lokalizacji.</li>
+  </ul>
+
+  <h3>7. Dzieci</h3>
+  <p>Aplikacja to profesjonalne narzędzie kontroli jakości barwy, przeznaczone dla użytkowników
+  dorosłych i zawodowych. Nie jest skierowana do dzieci i nie zbieramy świadomie danych
+  osób poniżej 13. roku życia.</p>
+
+  <h3>8. Twoje prawa</h3>
+  <p>Nie przechowujemy żadnych Twoich danych, więc nie mamy nic, co moglibyśmy udostępnić,
+  poprawić lub usunąć na Twoje żądanie. Dane zapisane lokalnie usuwasz samodzielnie —
+  czyszcząc dane Aplikacji lub ją odinstalowując. W sprawie danych zbieranych przez Google
+  (w tym prawa dostępu i usunięcia na podstawie RODO) właściwym administratorem jest Google;
+  odpowiednie narzędzia znajdziesz w polityce prywatności Google, do której link jest powyżej.</p>
+
+  <h3>9. Zmiany polityki</h3>
+  <p>Jeśli zakres przetwarzanych danych się zmieni (np. dojdzie nowa funkcja), zaktualizujemy
+  ten dokument i zmienimy datę na górze. Istotne zmiany opiszemy w opisie aktualizacji w Google Play.</p>
+
+  <h3>10. Kontakt</h3>
+  <p>Pytania dotyczące prywatności: <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+</section>
+
+<!-- ============================== ENGLISH ============================== -->
+<section id="en">
+  <h2>Privacy Policy</h2>
+  <p class="meta">Effective: 30 September 2026 · Last updated: 30 September 2026</p>
+
+  <p><strong>Color Match QC</strong> (the “App”) is developed and published by
+  <strong>Kryczka Studios Universe (KSU)</strong>, a sole proprietorship operated by Piotr Kryczka
+  (“we”, “us”). This policy explains what data the App processes, why, and who receives it.</p>
+
+  <div class="box">
+    <strong>Short version:</strong> the App works offline. We run no server, there are no user accounts,
+    and we collect nothing about you. Your photos and measurement results never leave your phone.
+    The only third party that receives data is Google AdMob, which serves the banner ad in the App.
+  </div>
+
+  <h3>1. What the App does</h3>
+  <p>The App compares colours: it calculates the colour difference (ΔE, CIEDE2000 and CIE76) between
+  a reference and a sample, from colours read out of a photo or entered manually. All calculations
+  run locally on your device.</p>
+
+  <h3>2. Data stored on your device</h3>
+  <p>The App stores the following in your phone’s private app storage
+  (via <code>Capacitor Preferences</code>):</p>
+  <ul>
+    <li><strong>Colour library</strong> — colours you saved, with the names you gave them,</li>
+    <li><strong>Measurement history</strong> — results of your earlier comparisons,</li>
+    <li><strong>Selected interface language</strong> (Polish / English / Spanish).</li>
+  </ul>
+  <p>This data is <strong>never transmitted anywhere</strong> — not to us, not to anyone else.
+  It exists only on your device and is permanently deleted when you clear the app’s data or
+  uninstall it. We cannot access or recover it.</p>
+
+  <h3>3. Photos and camera</h3>
+  <p>To read a colour, you can pick a photo from your gallery or take one with the camera — the choice
+  is made through the standard Android file picker. The selected photo is loaded into the App’s memory,
+  converted into colour values, and <strong>never written to storage</strong> — it exists only in
+  volatile memory for as long as the App is running. The App:</p>
+  <ul>
+    <li>does not upload photos to any server,</li>
+    <li>does not save photos to its own storage or to your gallery,</li>
+    <li>has no access to your gallery as a whole — it only ever sees the single file you point it at,</li>
+    <li>does not keep a live camera feed and does not record.</li>
+  </ul>
+
+  <h3>4. Advertising — Google AdMob</h3>
+  <p>The App displays a banner ad served by <strong>Google AdMob</strong>. To deliver and account for
+  ads, the Google Mobile Ads SDK collects and shares with Google:</p>
+  <ul>
+    <li><strong>the Android Advertising ID and App Set ID</strong>,</li>
+    <li><strong>your IP address</strong>, from which an approximate location (country/region) can be
+        estimated — this is not precise GPS location, and the App does not request location permission,</li>
+    <li><strong>device information</strong> (model, OS version, language, screen parameters),</li>
+    <li><strong>ad and app interactions</strong> (app launches, ad impressions and taps),</li>
+    <li><strong>diagnostic data</strong> about ad delivery and App stability.</li>
+  </ul>
+  <p>This data is sent over an encrypted connection (TLS) and is used for ad serving, measurement,
+  and fraud prevention. Google is the controller of that data. Details:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob privacy information</a></li>
+  </ul>
+
+  <h3>5. Ad consent (GDPR — EEA and UK)</h3>
+  <p>If you use the App in the European Economic Area, Switzerland or the United Kingdom, a consent
+  dialog powered by <strong>Google’s User Messaging Platform (UMP)</strong> appears on first launch.
+  Personalised ads are shown only if you consent; otherwise the App serves non-personalised ads.</p>
+  <p>You can change your choice at any time by:</p>
+  <ul>
+    <li>turning off ad personalisation in your system settings: <em>Android Settings → Google → Ads</em>
+        (you can also reset or delete your advertising ID there),</li>
+    <li>clearing the App’s data (<em>Settings → Apps → Color Match QC → Storage → Clear data</em>) —
+        the consent dialog will be shown again on the next launch.</li>
+  </ul>
+
+  <h3>6. What the App does NOT do</h3>
+  <ul>
+    <li>no account, registration or sign-in,</li>
+    <li>collects no name, e-mail address, phone number or company details,</li>
+    <li>uses no analytics (no Firebase Analytics, no Google Analytics),</li>
+    <li>has no server, database, leaderboard or cloud sync,</li>
+    <li>sells or rents no data,</li>
+    <li>requests no access to contacts, microphone, SMS or location.</li>
+  </ul>
+
+  <h3>7. Children</h3>
+  <p>The App is a professional colour quality-control tool intended for adult and professional users.
+  It is not directed at children, and we do not knowingly collect data from anyone under 13.</p>
+
+  <h3>8. Your rights</h3>
+  <p>We hold no data about you, so there is nothing for us to disclose, correct or erase on request.
+  Locally stored data is deleted by you — clear the App’s data or uninstall it. For data collected
+  by Google (including GDPR access and erasure rights), Google is the relevant controller; the tools
+  are described in the Google Privacy Policy linked above.</p>
+
+  <h3>9. Changes to this policy</h3>
+  <p>If what the App processes changes (for example a new feature), we will update this document and
+  change the date at the top. Material changes will be described in the Google Play release notes.</p>
+
+  <h3>10. Contact</h3>
+  <p>Privacy questions: <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+</section>
+
+<!-- ============================== ESPAÑOL ============================== -->
+<section id="es">
+  <h2>Política de privacidad</h2>
+  <p class="meta">En vigor desde: 30 de septiembre de 2026 · Última actualización: 30 de septiembre de 2026</p>
+
+  <p><strong>Color Match QC</strong> (la «Aplicación») está desarrollada y publicada por
+  <strong>Kryczka Studios Universe (KSU)</strong>, actividad unipersonal de Piotr Kryczka
+  («nosotros»). Esta política explica qué datos trata la Aplicación, con qué fin y quién los recibe.</p>
+
+  <div class="box">
+    <strong>Versión corta:</strong> la Aplicación funciona sin conexión. No tenemos servidor,
+    no hay cuentas de usuario y no recogemos ningún dato sobre ti. Tus fotos y resultados de medición
+    nunca salen del teléfono. El único tercero que recibe datos es Google AdMob, que muestra
+    el banner publicitario.
+  </div>
+
+  <h3>1. Qué hace la Aplicación</h3>
+  <p>La Aplicación compara colores: calcula la diferencia de color (ΔE, CIEDE2000 y CIE76) entre
+  un patrón y una muestra, a partir de colores leídos de una foto o introducidos manualmente.
+  Todos los cálculos se realizan localmente en el dispositivo.</p>
+
+  <h3>2. Datos guardados en tu dispositivo</h3>
+  <p>La Aplicación guarda lo siguiente en el almacenamiento privado de la app
+  (mediante <code>Capacitor Preferences</code>):</p>
+  <ul>
+    <li><strong>Biblioteca de colores</strong> — los colores que guardas, con los nombres que les das,</li>
+    <li><strong>Historial de mediciones</strong> — resultados de comparaciones anteriores,</li>
+    <li><strong>Idioma seleccionado</strong> (polaco / inglés / español).</li>
+  </ul>
+  <p>Estos datos <strong>no se transmiten a ninguna parte</strong>: ni a nosotros ni a nadie más.
+  Existen solo en tu dispositivo y se eliminan de forma permanente cuando borras los datos de la app
+  o la desinstalas. No podemos acceder a ellos ni recuperarlos.</p>
+
+  <h3>3. Fotos y cámara</h3>
+  <p>Para leer un color puedes elegir una foto de la galería o hacer una con la cámara: la elección
+  se realiza mediante el selector de archivos estándar de Android. La foto seleccionada se carga en
+  la memoria de la Aplicación, se convierte en valores de color y
+  <strong>no se guarda en ningún almacenamiento</strong>: existe solo en memoria volátil mientras
+  la Aplicación está en ejecución. La Aplicación:</p>
+  <ul>
+    <li>no sube fotos a ningún servidor,</li>
+    <li>no guarda fotos en su almacenamiento ni en tu galería,</li>
+    <li>no accede a tu galería en su conjunto: solo ve el archivo que tú le indicas,</li>
+    <li>no mantiene una vista en directo de la cámara ni graba.</li>
+  </ul>
+
+  <h3>4. Publicidad — Google AdMob</h3>
+  <p>La Aplicación muestra un banner servido por <strong>Google AdMob</strong>. Para entregar y
+  contabilizar los anuncios, el SDK de Google Mobile Ads recoge y comparte con Google:</p>
+  <ul>
+    <li><strong>el identificador de publicidad de Android y el App Set ID</strong>,</li>
+    <li><strong>tu dirección IP</strong>, a partir de la cual puede estimarse una ubicación aproximada
+        (país/región); no es ubicación GPS precisa y la Aplicación no solicita permiso de ubicación,</li>
+    <li><strong>información del dispositivo</strong> (modelo, versión del sistema, idioma, pantalla),</li>
+    <li><strong>interacciones con anuncios y con la app</strong> (inicios, impresiones y clics),</li>
+    <li><strong>datos de diagnóstico</strong> sobre la entrega de anuncios y la estabilidad de la app.</li>
+  </ul>
+  <p>Estos datos se envían mediante conexión cifrada (TLS) y se usan para mostrar anuncios, medición
+  y prevención del fraude. Google es el responsable de dichos datos. Más información:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Cómo usa Google la información de sitios y apps que utilizan sus servicios</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Información de privacidad de AdMob</a></li>
+  </ul>
+
+  <h3>5. Consentimiento publicitario (RGPD — EEE y Reino Unido)</h3>
+  <p>Si usas la Aplicación en el Espacio Económico Europeo, Suiza o el Reino Unido, en el primer inicio
+  aparece un diálogo de consentimiento gestionado por la
+  <strong>User Messaging Platform (UMP) de Google</strong>. Los anuncios personalizados solo se muestran
+  si das tu consentimiento; en caso contrario se muestran anuncios no personalizados.</p>
+  <p>Puedes cambiar tu decisión en cualquier momento:</p>
+  <ul>
+    <li>desactivando la personalización de anuncios en el sistema:
+        <em>Ajustes de Android → Google → Anuncios</em> (allí también puedes restablecer o eliminar
+        tu identificador de publicidad),</li>
+    <li>borrando los datos de la Aplicación
+        (<em>Ajustes → Aplicaciones → Color Match QC → Almacenamiento → Borrar datos</em>):
+        el diálogo de consentimiento volverá a aparecer en el siguiente inicio.</li>
+  </ul>
+
+  <h3>6. Lo que la Aplicación NO hace</h3>
+  <ul>
+    <li>no requiere cuenta, registro ni inicio de sesión,</li>
+    <li>no recoge nombre, correo electrónico, teléfono ni datos de empresa,</li>
+    <li>no usa analítica (ni Firebase Analytics ni Google Analytics),</li>
+    <li>no tiene servidor, base de datos, clasificación ni sincronización en la nube,</li>
+    <li>no vende ni alquila datos,</li>
+    <li>no solicita acceso a contactos, micrófono, SMS ni ubicación.</li>
+  </ul>
+
+  <h3>7. Menores</h3>
+  <p>La Aplicación es una herramienta profesional de control de calidad del color, destinada a
+  usuarios adultos y profesionales. No está dirigida a menores y no recogemos deliberadamente
+  datos de personas menores de 13 años.</p>
+
+  <h3>8. Tus derechos</h3>
+  <p>No conservamos datos sobre ti, por lo que no hay nada que podamos comunicar, corregir o suprimir
+  a petición. Los datos guardados localmente los eliminas tú: borra los datos de la app o desinstálala.
+  Respecto a los datos recogidos por Google (incluidos los derechos de acceso y supresión del RGPD),
+  Google es el responsable correspondiente; las herramientas se describen en su política de
+  privacidad, enlazada arriba.</p>
+
+  <h3>9. Cambios en esta política</h3>
+  <p>Si cambia lo que la Aplicación trata (por ejemplo, una nueva función), actualizaremos este
+  documento y la fecha superior. Los cambios relevantes se describirán en las notas de la versión
+  en Google Play.</p>
+
+  <h3>10. Contacto</h3>
+  <p>Consultas de privacidad: <a href="mailto:kryczka.dev@gmail.com">kryczka.dev@gmail.com</a></p>
+</section>
+
+<footer>
+  © 2026 Kryczka Studios Universe (KSU) · Color Match QC · com.psikuta.colormatcher
+</footer>
+
+</div>
+</body>
+</html>
